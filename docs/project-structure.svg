@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540">
+  <rect width="1200" height="540" fill="#0f172a"/>
+  <text x="40" y="50" fill="#e2e8f0" font-size="30" font-family="Segoe UI, Arial">BSPHP C++ Demos Structure</text>
+  <g font-family="Segoe UI, Arial" font-size="18" fill="#cbd5e1">
+    <rect x="40" y="90" width="250" height="390" rx="12" fill="#1e293b"/>
+    <text x="60" y="130">GUI</text>
+    <text x="60" y="165">- BSPHP-Cpp-MFC-Card-DEMO</text>
+    <text x="60" y="195">- BSPHP-Cpp-MFC-Login-DEMO</text>
+    <text x="60" y="225">- BSPHP-Cpp-win-Card-DEMO</text>
+    <text x="60" y="255">- BSPHP-Cpp-win-Login-DEMO</text>
+
+    <rect x="325" y="90" width="250" height="390" rx="12" fill="#1e293b"/>
+    <text x="345" y="130">CMD</text>
+    <text x="345" y="165">- BSPHP-Cpp-CMD-Card-DEMO</text>
+    <text x="345" y="195">- BSPHP-Cpp-CMD-Login-DEMO</text>
+
+    <rect x="610" y="90" width="250" height="390" rx="12" fill="#1e293b"/>
+    <text x="630" y="130">System / IOCTL</text>
+    <text x="630" y="165">- BSPHP-Cpp-System-Card-DEMO</text>
+    <text x="630" y="195">- BSPHP-Cpp-System-Login-DEMO</text>
+
+    <rect x="895" y="90" width="265" height="390" rx="12" fill="#1e293b"/>
+    <text x="915" y="130">Core Config Files</text>
+    <text x="915" y="165">Card: core/card_config.cpp</text>
+    <text x="915" y="195">Login: core/login_demo_config.cpp</text>
+    <text x="915" y="235">Init URL / Mutual Key / RSA</text>
+    <text x="915" y="265">configured in these files</text>
+  </g>
+</svg>
+

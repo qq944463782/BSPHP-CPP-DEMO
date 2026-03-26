@@ -1,3 +1,22 @@
+# BSPHP-Cpp-MFC-Card-DEMO
+
+![目录结构图](../docs/project-structure.svg)
+
+卡模式 MFC GUI 演示，含登录、机器码功能、主控制面板与续费购卡入口。
+
+## 配置初始化文件
+
+- 地址与密钥初始化文件：`core/card_config.cpp`
+- 主要配置项：
+  - `kUrl`
+  - `kMutual`
+  - `kServerKey` / `kClientKey`
+
+## 入口
+
+- 主工程：`app/CardMfcApp.vcxproj`
+- 界面逻辑：`app/*.cpp`
+
 # BSPHP-Cpp-MFC-Card-DEMO 项目说明
 
 ## 简体中文
