@@ -1,0 +1,10 @@
+这个提示是什么意思
+弹窗里的 「CreateCoreWebView2EnvironmentWithOptions 调用失败」 表示：在打开 Web 登录窗口时，WebView2 在“同步阶段”就没有成功发起环境创建（还没走到异步回调）。常见原因包括：
+
+未安装 WebView2 Runtime（Evergreen）（或安装损坏）
+自定义用户数据目录（%TEMP%\BSPHPLoginWebView2）无法创建/无权限，导致 API 直接失败
+https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/?cs=367099006&form=MA13LH
+
+安全软件、策略或权限拦截了 Edge/WebView2 组件
+
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/1b4b89db-981d-4b16-8801-bedc4094c84f/MicrosoftEdgeWebView2RuntimeInstallerX64.exe

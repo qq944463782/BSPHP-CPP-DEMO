@@ -1,0 +1,184 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+// ????(???????) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 2052, 0
+#pragma code_page(65001)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 480, 330
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BSPHP 卡密演示 (MFC)"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "公告",IDC_GRP_NOTICE,13,9,460,64
+    EDITTEXT        IDC_EDIT_NOTICE,18,22,447,44,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    CONTROL         "",IDC_TAB_MAIN,"SysTabControl32",TCS_HOTTRACK | WS_TABSTOP,10,78,459,13
+    LTEXT           "",IDC_STATIC_STATUS,0,306,480,24
+END
+
+IDD_TAB_CARD DIALOGEX 0, 0, 528, 330
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "卡串：",IDC_ST_CARD1,8,10,60,10
+    EDITTEXT        IDC_EDIT_CARD,70,8,446,14,ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_ST_CARD2,8,32,60,10
+    EDITTEXT        IDC_EDIT_CARD_PWD,70,30,446,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "验证使用",IDC_BTN_CARD_VERIFY,8,58,74,20
+    PUSHBUTTON      "网络测试",IDC_BTN_CARD_NET,88,58,74,20
+    PUSHBUTTON      "版本检测",IDC_BTN_CARD_VER,168,58,74,20
+    PUSHBUTTON      "续费充值",IDC_BTN_CARD_RENEW_WEB,248,58,74,20
+    PUSHBUTTON      "购买充值卡",IDC_BTN_CARD_BUY_GEN,328,58,82,20
+    PUSHBUTTON      "购买库存卡",IDC_BTN_CARD_BUY_STOCK,416,58,82,20
+END
+
+IDD_TAB_MACHINE DIALOGEX 0, 0, 528, 330
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "机器码账号模式",IDC_ST_MACH_TITLE,8,10,500,10
+    CONTROL         "机器码验证使用",IDC_RADIO_MACH_USE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,8,26,200,12
+    CONTROL         "机器码充值续费",IDC_RADIO_MACH_RENEW,"Button",BS_AUTORADIOBUTTON,220,26,200,12
+    LTEXT           "机器码：",IDC_ST_MACH_LBL,8,48,60,10
+    EDITTEXT        IDC_EDIT_MACH,70,46,446,14,ES_AUTOHSCROLL
+    LTEXT           "充值卡号：",IDC_ST_CHONG1,8,70,60,10
+    EDITTEXT        IDC_EDIT_CHONG_KA,70,68,446,14,ES_AUTOHSCROLL
+    LTEXT           "充值密码：",IDC_ST_CHONG2,8,92,60,10
+    EDITTEXT        IDC_EDIT_CHONG_PWD,70,90,446,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "验证使用",IDC_BTN_MACH_VERIFY,8,120,74,20
+    PUSHBUTTON      "网络测试",IDC_BTN_MNET,88,120,74,20
+    PUSHBUTTON      "版本检测",IDC_BTN_MVER,168,120,74,20
+    PUSHBUTTON      "确认充值",IDC_BTN_CHONG_OK,8,120,74,20
+    PUSHBUTTON      "一键续费充值",IDC_BTN_MACH_PAYWEB,88,120,88,20
+    PUSHBUTTON      "购买充值卡",IDC_BTN_MACH_GEN,182,120,82,20
+    PUSHBUTTON      "购买库存卡",IDC_BTN_MACH_STOCK,270,120,82,20
+END
+
+IDD_PANEL DIALOGEX 0, 0, 620, 580
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "主控制面板"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "当前卡号：",IDC_STATIC_PANEL_CARD,14,12,580,10
+    LTEXT           "VIP到期：",IDC_STATIC_PANEL_VIP,14,26,580,12
+    PUSHBUTTON      "刷新到期",IDC_P_DATE,14,46,88,20
+    PUSHBUTTON      "登录状态",IDC_P_LK,106,46,88,20
+    PUSHBUTTON      "心跳",IDC_P_HEART,198,46,88,20
+    PUSHBUTTON      "公告",IDC_P_NOTICE,290,46,88,20
+    PUSHBUTTON      "服务器时间",IDC_P_SVRDATE,382,46,88,20
+    PUSHBUTTON      "版本",IDC_P_VER,474,46,88,20
+    PUSHBUTTON      "软件描述",IDC_P_SOFT,14,70,88,20
+    PUSHBUTTON      "预设URL",IDC_P_URL,106,70,88,20
+    PUSHBUTTON      "Web地址",IDC_P_WEBURL,198,70,88,20
+    PUSHBUTTON      "软件配置",IDC_P_CUST_APP,290,70,88,20
+    PUSHBUTTON      "VIP配置",IDC_P_CUST_VIP,382,70,88,20
+    PUSHBUTTON      "登录配置",IDC_P_CUST_LOGIN,474,70,88,20
+    PUSHBUTTON      "全局配置",IDC_P_GLOBAL,14,94,88,20
+    PUSHBUTTON      "逻辑A",IDC_P_LA,106,94,88,20
+    PUSHBUTTON      "逻辑B",IDC_P_LB,198,94,88,20
+    PUSHBUTTON      "激活查询",IDC_P_QUERY,290,94,88,20
+    PUSHBUTTON      "卡信息",IDC_P_INFO,382,94,88,20
+    LTEXT           "可选卡密：",IDC_ST_PANEL_PWD,14,122,80,10
+    EDITTEXT        IDC_EDIT_PANEL_PWD,96,120,200,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "绑定本机",IDC_P_BIND,14,142,88,20
+    PUSHBUTTON      "解绑",IDC_P_UNBIND,106,142,88,20
+    PUSHBUTTON      "续费充值",IDC_P_WRENEW,198,142,88,20
+    PUSHBUTTON      "购买充值卡",IDC_P_WGEN,290,142,88,20
+    PUSHBUTTON      "购买库存卡",IDC_P_WSTOCK,382,142,88,20
+    PUSHBUTTON      "注销",IDC_P_LOGOUT,474,142,88,20
+    LTEXT           "API日志：",IDC_ST_APILOG,14,170,40,10
+    EDITTEXT        IDC_EDIT_PANEL_LOG,14,184,592,360,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+    END
+
+    IDD_TAB_CARD, DIALOG
+    BEGIN
+    END
+
+    IDD_TAB_MACHINE, DIALOG
+    BEGIN
+    END
+
+    IDD_PANEL, DIALOG
+    BEGIN
+        VERTGUIDE, 511
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_MAIN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TAB_CARD AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // ????(???????) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
